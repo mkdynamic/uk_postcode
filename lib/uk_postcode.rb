@@ -3,7 +3,7 @@ class UKPostcode
            ( [A-PR-UWYZ][A-Z]? )           # area
            ( [0-9IO][0-9A-HJKMNPR-YIO]? )  # district
            (?:
-             \s?
+             \s*
              ( [0-9IO] )                   # sector
              ( [ABD-HJLNPQ-Z10]{2} )       # unit
                                      )?

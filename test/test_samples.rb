@@ -18,7 +18,7 @@ class UKPostcodeTest < Test::Unit::TestCase
       should "be valid for each line in sample file" do
         @file.each_line do |line|
           next if line =~ /^#|^$/
-          sample = line.chomp.sub(/\s+/, "")
+          sample = line.chomp
           postcode = UKPostcode.new(sample)
           assert postcode.valid?, "'#{sample}' should be valid"
         end
